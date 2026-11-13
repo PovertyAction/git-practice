@@ -1,3 +1,3 @@
-# lac-lab
+# Git and Github Practice
 
-Lectura Temprana data.
+Repository for practicing Git and GitHub commands.
