@@ -1,0 +1,17 @@
+[project]
+name = "my-first-gh-repo"
+version = "0.1.0"
+description = "Fictitious teaching data for the IPA LAC Claude Code workshops"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2.3",
+    "seaborn>=0.13.2",
+    # pandas.DataFrame.to_markdown needs it, and any agent asked for a
+    # markdown table will reach for that call.
+    "tabulate>=0.9.0",
+]
+
+[tool.uv]
+# A folder of scripts and data, not an installable package. Without this, uv
+# tries to build lac-lab itself and fails for want of a module to package.
+package = false
